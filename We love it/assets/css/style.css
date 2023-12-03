@@ -1,0 +1,486 @@
+/* Common */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+
+:root {
+    --primary: #EF7008;
+    --secondary: #FFFFFF;
+    --btnHover1: #EDB013;
+    --btnHover2: #0B64A0;
+
+    --font1: Montserrat;
+    --h1: 45px;
+    --extraBold: 800;
+    --h2: 40px;
+    --bold: 700;
+    --h3: 24px;
+    --paragraph: 13px;
+    --regular: 400;
+
+    --fontColor1: #000;
+    --fontColor2: #FFF;
+}
+
+body,
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: var(--font1);
+    color: var(--fontColor1);
+}
+
+header,
+section,
+footer {
+    margin: auto;
+    max-width: 1440px;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+    max-width: 1195px;
+}
+
+h1 {
+    font-family: var(--font1);
+    font-weight: var(--extraBold);
+    font-size: var(--h1);
+    color: var(--fontColor2);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: var(--font1);
+    font-weight: var(--bold);
+    font-size: var(--h2);
+}
+
+h3 {
+    font-family: var(--font1);
+    font-weight: var(--regular);
+    font-size: var(--h3);
+}
+
+p {
+    font-family: var(--font1);
+    font-weight: var(--regular);
+    font-size: var(--paragraph);
+    line-height: 1.4em;
+}
+
+/* ************************************************************************** */
+/* Header */
+header .container {
+    margin: 15px auto;
+}
+
+.menu {
+    display: flex;
+}
+
+.contact {
+    display: flex;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+nav a {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--fontColor1);
+    font-weight: var(--regular);
+}
+
+.contact div {
+    border-left: solid #CFCFCF 1px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact div img {
+    padding: 0px 15px;
+}
+
+/* ************************************************************************** */
+/* Hero */
+.hero {
+    background-image: url(../images/Factory-home-banner\ 3.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 578px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-gradient1 {
+    height: 354px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 7.31%, rgba(130, 63, 9, 0.19) 49.79%, rgba(41, 19, 1, 0.83) 100%);
+}
+
+.hero-gradient2 {
+    height: 354px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) -24.41%, rgba(127, 127, 127, 0.00) 14.46%, rgba(30, 30, 30, 0.64) 70.19%, rgba(0, 0, 0, 0.00) 100%);
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero h1 {
+    width: 682px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.hero h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 8px;
+    left: -5px;
+    width: 684px;
+    background-color: var(--primary);
+    transform: skewX(45deg);
+}
+
+.hero .container {
+    margin: 0px auto 65px auto;
+}
+
+
+/* ************************************************************************** */
+/* About */
+.about {
+    background-image: url(../images/stainless-steel-plate-metal-texture-surface-background\ 1.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .flex-container {
+    display: flex;
+    padding: 90px 0;
+    justify-content: space-between;
+}
+
+.about .flex-container .flex-item-1 {
+    width: 599px;
+    padding: 50px 0px;
+}
+
+.about h2 {
+    margin-bottom: 30px;
+}
+
+.about a {
+    text-decoration: none;
+    color: var(--fontColor2);
+    font-weight: var(--bold);
+}
+
+.about .readmore {
+    color: var(--primary);
+    ;
+    background-color: var(--primary);
+    width: 166px;
+    padding: 5px 10px;
+    margin: 11px;
+    margin-top: 30px;
+    -ms-transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+}
+
+.about .readmore-left::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -12px;
+    background-color: var(--primary);
+    width: 20px;
+    height: 100%;
+    -ms-transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+    transform: skewX(10deg);
+}
+
+.about .readmore-content {
+    padding: 11px;
+    -ms-transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+    transform: skewX(10deg);
+    display: inline-block;
+}
+
+.about .readmore-content .fa {
+    font-size: 18px;
+    margin-left: 35px;
+}
+
+.about .flex-container .ellipse {
+    position: absolute;
+    translate: -538px -5px;
+    z-index: 1 !important;
+}
+
+.about .flex-container .image {
+    width: 518px;
+    position: relative;
+    z-index: 2;
+    margin-left: 20px;
+}
+
+/* ************************************************************************** */
+/* Posts */
+.posts {
+    background-color: var(--primary);
+    color: var(--fontColor2);
+}
+
+.posts .flex-container {
+    display: flex;
+    padding: 58px 0 47px 0;
+    justify-content: space-between;
+}
+
+.posts .flex-container img {
+    width: 586px;
+}
+
+.posts h2 {
+    color: var(--fontColor2);
+    margin-bottom: 30px;
+}
+
+.posts h3 {
+    color: var(--fontColor2);
+}
+
+.posts p {
+    font-size: 14px;
+    line-height: 23.8px;
+}
+
+.posts .flex-container .flex-item-2 {
+    width: 505px;
+    padding: 90px 0px;
+}
+
+.posts .flex-container .flex-item-3 {
+    width: 550px;
+    padding: 80px 0px;
+}
+
+.posts a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: var(--bold);
+}
+
+.posts .readmore {
+    color: var(--primary);
+    background-color: var(--secondary);
+    width: 166px;
+    padding: 5px 10px;
+    margin: 11px;
+    margin-top: 30px;
+    -ms-transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+}
+
+.posts .readmore-left::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -12px;
+    background-color: var(--secondary);
+    width: 20px;
+    height: 100%;
+    -ms-transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+    transform: skewX(10deg);
+}
+
+.posts .readmore-content {
+    padding: 11px;
+    -ms-transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+    transform: skewX(10deg);
+    display: inline-block;
+}
+
+.posts .readmore-content .fa {
+    font-size: 18px;
+    margin-left: 35px;
+}
+
+/* ************************************************************************** */
+/* Projects */
+.projects {
+    background-image: url(../images/stainless-steel-plate-metal-texture-surface-background\ 1.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects .mask {
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 18.62%, rgba(0, 0, 0, 0.69) 49.02%, rgba(0, 0, 0, 0.36) 81.25%, rgba(0, 0, 0, 0.06) 100%);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.projects h2,
+.projects h3 {
+    color: var(--fontColor2);
+    text-align: center;
+}
+
+.projects .flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px auto 60px auto;
+}
+
+.projects a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: var(--bold);
+}
+
+.projects .center {
+    display: flex;
+    justify-content: center;
+}
+
+.projects .readmore {
+    color: var(--primary);
+    background-color: var(--secondary);
+    width: 211px;
+    padding: 5px 10px;
+    margin: 11px;
+    margin-top: 30px;
+    -ms-transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+}
+
+.projects .readmore-left::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -12px;
+    background-color: var(--secondary);
+    width: 20px;
+    height: 100%;
+    -ms-transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+    transform: skewX(10deg);
+}
+
+.projects .readmore-content {
+    padding: 11px;
+    -ms-transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+    transform: skewX(10deg);
+    display: inline-block;
+}
+
+.posts .readmore-content .fa {
+    font-size: 18px;
+    margin-left: 35px;
+}
+
+/* ************************************************************************** */
+/* footer */
+footer,
+footer p {
+    background-color: var(--primary);
+    color: var(--fontColor2);
+    font-size: 14px;
+}
+
+footer .container {
+    padding: 80px 0 25px 0;
+}
+
+footer .logo {
+    display: flex;
+    background-color: var(--secondary);
+    width: 168px;
+    height: 205px;
+    justify-content: center;
+}
+
+footer .logo img {
+    width: 118px;
+}
+
+footer .flex-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1.5fr;
+    justify-items: center;
+}
+
+footer .flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap: 20px;
+}
+
+footer .flex-container a {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: var(--bold);
+}
+
+footer .menu {
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+footer .address2 {
+    margin-left: 30px;
+}
+
+footer .socials {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .socials div {
+    display: inline-flex;
+    gap: 10px;
+}
+
+footer .bold {
+    font-weight: var(--bold);
+}
+
+footer .right-and-credits {
+    margin-top: 85px;
+    width: 627px;
+    font-weight: var(--bold);
+}
